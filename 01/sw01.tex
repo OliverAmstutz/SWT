@@ -33,6 +33,8 @@ Beispiele:
     \item Heroes of Newearth Game-Entwicklung: nicht-Initialisierung einer Variable hat im 64Bit System zum Fehler geführt, welches erst beim Release durch die User bemerkt wurde. Rollback war notwendig.
 \end{itemize}
 
+Je früher ein Fehler erkannt wird, desto billiger ist die Behebung!
+
 \subsection{Testen bringt Nutzen}
 Mehr Qualität:
 \begin{itemize}
@@ -78,12 +80,14 @@ Abbildung \ref{fig: Testqualität vs. Produktqualität} zeigt auf der X-Achse di
 
 Aus der Abbildung lassen sich folgende Rückschlüsse ziehen:
 \begin{itemize}
+    \item Testqualität ist entscheidend, nur "halbes Testing" bringt nichts!
     \item Der Grund fürs Testen ist es herauszufinden ob man eine gute oder schlechte Produktqualität hat.
     \item Ist die Testqualität schlecht, können keine Rückschlüsse auf die Produktqualität gewonnen werden -> Provokativ: Warum testet man dann überhaupt?
     \item Man findet sehr wenig Fehler -> gute Entwickler, schlechte Tester
     \item Man findet sehr viele Fehler -> schlechte Entwickler, gute Tester
     \item Aufpassen da man den gleichen Befund haben kann bei total unterschiedlicher Ausgangslage!
     \item Je besser das Testen, desto schlechter erscheint die Produktqualität
+    \item Als Konsequenz kann man also sagen - nur die besten testen!
 \end{itemize}
 
 Das Bewerten der Fehlerzahl kann über das Messen der gefundenen Fehler im Verlaufe des Projektes bewertet werden. Abbildung \ref{fig: Fehlerkumulation über die Zeit} zeigt das Aufkumulieren der Fehler über die Zeit. Die X-Achse ist die Zeit, die Y-Achse sind alle gefundenen Fehler.
@@ -98,7 +102,6 @@ Das Bewerten der Fehlerzahl kann über das Messen der gefundenen Fehler im Verla
 Wenn der Gradient der gefundenen Fehler (rote Linien) flacher wird, ist dies ein Zeichen dafür, das mit den angewandten Methoden keine weiteren Fehler gefunden werden können. Das kann auch so interpretiert werden, das in Abbildung \ref{fig: Testqualität vs. Produktqualität} man die Qualität des Produktes gesteigert hat. Das sich die Qualität der Tests verschlechter über Zeit wird nicht angenommen.
 Weitere Info's zu diesem Thema in Kapitel \textcolor{red}{Noch zu definieren - später!}.
 
-
 \subsection{Anforderungen der Stakeholder}
 Stellen Sie sich ein Glas / Ball vor. Ich kann ein Glas/Ball nicht testen ohne die Anforderungen der Stakeholder zu kennen. Dies beinhaltet:
 \begin{itemize}
@@ -108,4 +111,14 @@ Stellen Sie sich ein Glas / Ball vor. Ich kann ein Glas/Ball nicht testen ohne d
     \item Kontext
 \end{itemize}
 
-Ein Softwaretest prüft und bewertet Software auf Erfüllung der für ihren Einsatz definierten Anforderungen und misst ihre Qualität. 
+Ein Softwaretest prüft und bewertet Software auf Erfüllung der für ihren Einsatz definierten Anforderungen und misst ihre Qualität. Fürs Testen braucht's Erwartungen, Anforderungen und Akzeptanzkriterien!
+
+\textcolor{red}{Noch am passenden Ort einfüllen:}
+Code qualität bei der Entwicklung bereits prüfen mit:
+\begin{itemize}
+    \item 4 Augen Prinzip
+    \item Codereview
+    \item Pair-Programming
+\end{itemize}
+
+Die erste Teststufe liegt bereits beim Software Entwickler!
